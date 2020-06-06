@@ -1,0 +1,30 @@
+body {
+	background-image: url("index.jpg");
+	background-size:  cover;
+	color: white;
+	font:   14px Verdana, serif;
+}
+
+table	{
+	background-color: rgba(0,0,0,0.6);
+	float: right;
+	border-radius: 10px;
+}
+
+div table {
+	float: left;
+	width: 600px;
+	height: 80; 
+}
+
+ input[type=submit] {
+ 	background: rgb(220,80,0);
+ 	height: 30px;
+ 	border-radius: 40%;
+ 	border: none;
+ 	color: white;
+ 	font:  bold 16px Verdana, serif;
+} 
+input , select  {
+	font:   14px Verdana, serif;
+}

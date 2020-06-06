@@ -1,0 +1,125 @@
+body {
+	background-image: url(back.jpg);
+	background-size: cover;
+	margin: auto;
+	font:  17px Georgia, serif;
+}
+
+.container {
+	border : 10px solid rgba(100,100,100,0.5);
+	display: flex;
+	height: 95vh;	
+}
+
+.column1{
+	flex:1;
+	border-right : 10px solid rgba(200,200,200,0.5);
+	color: white;
+}
+
+.column2{
+	flex:2;
+	border-right : 10px solid rgba(200,200,200,0.5);
+	color: white;
+}
+
+.column3{
+	flex:2;	
+	color: white;
+}
+
+#tabs {
+	display: flex;
+	border-bottom: 5px solid rgba(1,1,1,0.5);
+	width: 100%
+}
+
+.btn-part1 {
+	flex: 1;
+}
+.btn-part1 {
+	flex: 1;
+}
+.btn-part1 {
+	flex: 1;
+}
+
+#tabs button {
+	background-color: inherit;
+	color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+#tabs .btn-part1:hover {
+	background-color: rgba(1,1,250,0.9);
+}
+
+#tabs .active {
+	background-color: rgba(250,1,1,0.9);
+}
+
+#vtabs button {
+	background-color: inherit;
+	color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+#vtabs .btn-part2:hover {
+	background-color: rgba(1,1,250,0.9);
+}
+
+#vtabs .active {
+	background-color: rgba(250,1,1,0.9);
+}
+
+
+#part1 {
+	height: 100%;
+	overflow: auto ;
+}
+
+.contact-list {
+	background-color: rgba(50,50,50,0.6);
+    width: inherit;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 20px;
+    
+}
+
+#part1 .active {
+	background-color: rgba(200,200,200,0.9);
+}
+
+#part1 .online .profile_pic{
+	border: 5px solid rgba(1,255,1,0.9);
+}
+
+.contact-list:nth-child(odd) {
+	background-color: rgba(100,100,100,0.6); 
+}
+
+.contact-list:hover {
+	background-color: black;
+	color: white; 
+}
+
+.profile_pic {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+}

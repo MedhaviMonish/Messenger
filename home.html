@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Local Messenger</title>
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link rel="stylesheet" type="text/css" href="message.css">
+	<link rel="stylesheet" type="text/css" href="editor.css">
+	<script type="text/javascript" src="part1.js"></script>
+	<script type="text/javascript" src="part2.js"></script>
+	<script type="text/javascript" src="part3.js"></script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+<div class="container">
+	<div class="column1">
+		<div id="tabs" >
+			<button class="btn-part1" onclick="load(event,1)">Contacts</button>
+			<button class="btn-part1"  id="contact"  onclick="load(event,2)">Chats</button>
+			<button class="btn-part1" onclick="load(event,3)">Groups</button>
+		</div>
+		<div id="part1">
+			
+		</div>
+	</div>
+
+
+	<div class="column2">
+		<div id="conversation">
+			
+		</div>
+		<div class="write">
+			<textarea id="tosend"></textarea>
+			<div id ="s">
+				 <input type = "file"  id="f" name = "file" multiple/>
+		         <input type = "button" id="upload" onclick="upl()" value = "Upload File" />
+      			<button onclick="send()" id="send">Send</button>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="column3">
+		<div id="edit">
+			
+		</div>
+		<div id="vtabs">
+			
+			<form method="post" action="index.html">
+				<input type="submit" class="btn-part2" value="Logout">
+			</form>
+
+			<button class="btn-part2" onclick="editor(event,1)">Group</button>
+			<button class="btn-part2" onclick="editor(event,2)">Profile</button>
+			<button class="btn-part2" onclick="editor(event,3)">Canvas</button>
+			<button class="btn-part2" onclick="editor(event,4)">Video Call</button>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+		localStorage.clear();
+		document.getElementById('contact').click();
+			
+		var press=false,begin=true,c,ctx;
+		var chatinterval , gchatinterval;
+		var group=false,alerted=false;
+		var share,def=false;
+		var arrcanvas,arrvideo;
+		var sharing , sharewith;
+		var mediaRecorder;
+		var started = true;
+</script>
+</body>
+</html>

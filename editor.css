@@ -1,0 +1,40 @@
+.column3 {
+	display: flex;
+}
+
+#edit {
+	border-right:  10px solid rgba(200,200,200,0.5);
+	flex: 9;
+	height: 100%;
+	overflow: auto ;
+}
+
+#vtabs {
+	flex: 1;
+}
+
+#vtabs .btn-part2 {
+	width: 100%;
+	height: 50px;
+	font-size: 15px;
+}
+
+.gusers {
+	background-color: grey;
+    width: inherit;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 20px;
+    
+}
+
+.gusers:nth-child(odd) {
+	background-color: rgb(200,200,200); 
+}
+
+.gprofile_pic {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+}
