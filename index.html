@@ -40,14 +40,14 @@
 <title>Local Messenger - Login or Sign Up</title>
 <body>
 <div>
-	<Form method="post" action="home.html"  onsubmit="return f1check()">
+	<Form method="post"  onsubmit="return f1check()">
 	<table>
 		<tr>
 			<td>Email</td>
 			<td><input type="text" name="email" required></td>
 			<td>Password</td>
 			<td><input type="password" name="password" required></td>
-			<td><input type="submit" value="Login"></td>
+			<td><button onclick="f1check()" >Login</button></td>
 		</tr>
 	</table>
 	</Form>
@@ -112,7 +112,7 @@
 			<td><input type="number" name="rmobile" required></td>
 		</tr>
 		<tr>
-			<th colspan=2><input type="submit" value="Sign Up" ></th>
+			<th colspan=2><button onclick="f2check()" >Sign Up</button></th>
 		</tr>
 	</table>
 </Form>
